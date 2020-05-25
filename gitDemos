@@ -81,6 +81,14 @@ rebase 之前要pull master分支，
 3.切换dev分支rebase到master分支;
 
 
+打 tag
+先切换到需要打tag 的分支
+如 git checkout PROD
+打 tag
+  git tag PROD-20200525
+推送tag 到 远程
+git push origin PROD-20200525
+  
 
 
 

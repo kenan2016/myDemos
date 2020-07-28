@@ -75,10 +75,14 @@ merge dev-20200403
 rebase 之前要pull master分支，
 保证是最新的。合并完成之后，新的开发需要拉取最新的master进行开发
 
-
-1. dev分支开发完毕后推送远程；
-2.切换master分支拉取远程；
-3.切换dev分支rebase到master分支;
+git checkout master
+git pull
+git checkout local
+# git rebase -i HEAD~2  //合并提交 --- 2表示合并两个
+git rebase master---->解决冲突--->git rebase --continue
+git checkout master
+git merge local
+git push
 
 
 打 tag
